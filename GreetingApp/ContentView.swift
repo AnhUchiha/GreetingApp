@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var name = "Dinh Tuan Anh"
     var body: some View {
         ZStack {
             BackgroundView()
@@ -12,6 +13,7 @@ struct ContentView: View {
                 Spacer()
             }
         }
+        
     }
 }
 

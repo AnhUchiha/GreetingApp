@@ -2,6 +2,6 @@ import SwiftUI
 
 struct DataItemModel: Identifiable {
     let id =  UUID()
-    let text: String
-    let colorText: Color
+    var text: String
+    var colorText: Color
 }
