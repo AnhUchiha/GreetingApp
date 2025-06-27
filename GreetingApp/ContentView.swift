@@ -30,11 +30,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15){
-            Notifi(text: message[0].text, colorText: message[0].colorText)
-            Notifi(text: message[1].text, colorText :message[1].colorText)
-            Notifi(text: message[2].text, colorText: message[2].colorText)
-            Notifi(text: message[3].text, colorText: message[3].colorText)
-            Notifi(text: message[4].text, colorText: message[4].colorText)
+            ForEach(message) { ele in
+                Notifi(text: ele.text, colorText: ele.colorText)
+            }
         }
     }
 }
