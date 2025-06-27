@@ -1,18 +1,56 @@
 import SwiftUI
 
 struct TitleView: View {
+    let lineWidth = 15.0
+    let diameter = 70.0
+
+    @State private var rotationAngle: Double = 0
+    @State private var title: String = "Exploring IOS Programming"
+
+    let titles = [
+        "Exploring IOS Programming",
+        "Programming recipes",
+        "Learning how to bake",
+        "A quest for language"
+    ]
+    
+    var angularGradient: AngularGradient {
+        AngularGradient(colors: [.white, .green, .yellow, .red, .white], center: .center, angle: .degrees(0))
+    }
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 0){
-           Text("Greeting")
-               .font(.largeTitle)
-               .fontWeight(.semibold)
-           Text("Exploring IOS Programming")
-               .font(.headline)
-               .fontWeight(.thin)
+        HStack {
+            VStack(alignment: .leading, spacing: 0){
+                Text("Greeting")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                Text(title)
+                    .font(.headline)
+                    .fontWeight(.thin)
+                    .onTapGesture {
+                        title = titles.randomElement() ?? "Exploring IOS Programming"
+                    }
+            }
+            
+            Spacer()
+            
+            Circle()
+                .stroke(angularGradient, lineWidth: lineWidth)
+                .frame(width: diameter, height: diameter)
+                .rotationEffect(.degrees(rotationAngle))
+                .onTapGesture {
+                    withAnimation(.easeIn(duration: 0.5)) {
+                        rotationAngle += 360
+                    }
+                }
         }
+        .padding()
     }
 }
 
 #Preview {
-    TitleView()
+    VStack{
+        TitleView()
+        Spacer()
+    }
 }

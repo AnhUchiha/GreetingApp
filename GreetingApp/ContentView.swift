@@ -12,8 +12,9 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
             }
+            .padding()
         }
-        
+
     }
 }
 
