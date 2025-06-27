@@ -5,4 +5,9 @@
 //  Created by Tuấngg Anhhh on 27/6/25.
 //
 
-import Foundation
+import SwiftUI
+
+struct DataItemModel {
+    let text: String
+    let colorText: Color
+}
