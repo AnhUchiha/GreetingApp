@@ -10,7 +10,7 @@ struct ContentView: View {
                 MessagesView()
                 Spacer()
                 Spacer()
-            } 
+            }
             .padding()
         }
     }

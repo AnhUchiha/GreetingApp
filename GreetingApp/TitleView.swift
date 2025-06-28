@@ -15,7 +15,7 @@ struct TitleView: View {
     ]
     
     var angularGradient: AngularGradient {
-        AngularGradient(colors: [.white, .green, .yellow, .red, .white], center: .center, angle: .degrees(0))
+        AngularGradient(colors: [.white, .green, .yellow, .red, .white], center: .center, angle: .degrees(90))
     }
     
     var body: some View {
