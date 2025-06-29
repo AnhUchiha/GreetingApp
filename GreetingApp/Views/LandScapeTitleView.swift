@@ -1,10 +1,9 @@
 import SwiftUI
 
-struct TitleView: View {
+struct LandScapeTitleView: View {
     var body: some View {
-        HStack {
+        VStack(alignment: .leading, spacing: 30) {
             TitleTextView()
-            Spacer()
             TitleCircleView()
         }
         .padding()
@@ -12,8 +11,5 @@ struct TitleView: View {
 }
 
 #Preview {
-    VStack{
-        TitleView()
-        Spacer()
-    }
+    LandScapeTitleView()
 }

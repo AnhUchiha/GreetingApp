@@ -38,10 +38,12 @@ struct MessagesView: View {
     }
     
     var body: some View {
-        ForEach(message.indices, id: \.self) { index in
-            Notifi(text: message[index].text, colorText: message[index].colorText){
-                withAnimation {
-                    message[index].colorText = colors.randomElement() ?? .cyan
+        VStack(alignment: .leading){
+            ForEach(message.indices, id: \.self) { index in
+                Notifi(text: message[index].text, colorText: message[index].colorText){
+                    withAnimation {
+                        message[index].colorText = colors.randomElement() ?? .cyan
+                    }
                 }
             }
         }
