@@ -2,6 +2,6 @@ import SwiftUI
 
 struct DataItemModel: Identifiable {
     let id =  UUID()
-    var text: String
+    var text: LocalizedStringKey
     var colorText: Color
 }

@@ -22,7 +22,7 @@ struct MessagesView: View {
         .indigo
     ]
     
-    func Notifi(text: String, colorText: Color, onTap: @escaping () -> Void)-> some View {
+    func Notifi(text: LocalizedStringKey, colorText: Color, onTap: @escaping () -> Void)-> some View {
         Text(text)
             .font(.title)
             .foregroundStyle(.white)

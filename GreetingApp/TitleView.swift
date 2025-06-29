@@ -5,9 +5,9 @@ struct TitleView: View {
     let diameter = 70.0
 
     @State private var rotationAngle: Double = 0
-    @State private var title: String = "Exploring IOS Programming"
+    @State private var title: LocalizedStringKey = "Exploring IOS Programming"
 
-    let titles = [
+    let titles: [LocalizedStringKey] = [
         "Exploring IOS Programming",
         "Programming recipes",
         "Learning how to bake",
@@ -28,7 +28,7 @@ struct TitleView: View {
                     .font(.headline)
                     .fontWeight(.thin)
                     .onTapGesture {
-                        title = titles.randomElement() ?? "Exploring IOS Programming"
+                        title = titles.randomElement() ?? LocalizedStringKey("Exploring IOS Programming")
                     }
             }
             

@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>GreetingApp_VN.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>28BE56D32E0D37B10032F29C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28BE56E12E0D37B20032F29C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28BE56EB2E0D37B20032F29C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

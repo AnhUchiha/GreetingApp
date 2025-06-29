@@ -1,0 +1,106 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "A quest for language" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hành trình khám phá ngôn ngữ"
+          }
+        }
+      }
+    },
+    "Are you ready ?" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn đã sẵn sàng chưa?"
+          }
+        }
+      }
+    },
+    "Boom!" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuyệt!"
+          }
+        }
+      }
+    },
+    "Exploring IOS Programming" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khám phá lập trình iOS"
+          }
+        }
+      }
+    },
+    "Greeting" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lời chào"
+          }
+        }
+      }
+    },
+    "Hello World!" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xin chào thế giới!"
+          }
+        }
+      }
+    },
+    "Learning how to bake" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Học cách nướng bánh"
+          }
+        }
+      }
+    },
+    "Programming recipes" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Công thức lập trình"
+          }
+        }
+      }
+    },
+    "Start Coding" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"Bắt đầu lập trình"
+          }
+        }
+      }
+    },
+    "Welcome Swift Language" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chào mừng đến với ngôn ngữ Swift"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
