@@ -10,6 +10,11 @@ struct GreetingView: View {
                 MessagesView()
                 Spacer()
                 Spacer()
+                HStack{
+                    Spacer()
+                    LanguageOptionsView()
+                    .padding()
+                }
             }
             .padding()
         }
