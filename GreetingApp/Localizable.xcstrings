@@ -1,6 +1,12 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "🇺🇸 English" : {
+
+    },
+    "🇻🇳 Tiếng Việt" : {
+
+    },
     "A quest for language" : {
       "localizations" : {
         "vi" : {
@@ -27,6 +33,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tuyệt!"
+          }
+        }
+      }
+    },
+    "English" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "English"
           }
         }
       }
@@ -87,6 +104,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\"Bắt đầu lập trình"
+          }
+        }
+      }
+    },
+    "Tiếng Việt" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếng Việt"
           }
         }
       }

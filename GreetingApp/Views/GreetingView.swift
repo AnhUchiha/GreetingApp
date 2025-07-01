@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct GreetingView: View {
+    @Binding var selectedLanguage: String
+    
     var body: some View {
         ZStack {
             BackgroundView()
@@ -12,8 +14,8 @@ struct GreetingView: View {
                 Spacer()
                 HStack{
                     Spacer()
-                    LanguageOptionsView()
-                    .padding()
+                    LanguageOptionsView(selectedLanguage: $selectedLanguage)
+                            .padding()
                 }
             }
             .padding()
@@ -22,5 +24,6 @@ struct GreetingView: View {
 }
 
 #Preview {
-    GreetingView()
+    @Previewable @State var selectedLanguage = "en"
+    GreetingView(selectedLanguage: $selectedLanguage)
 }

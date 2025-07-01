@@ -1,36 +1,31 @@
 import SwiftUI
 
 struct LanguageOptionsView: View {
-    @State private var selectedLanguage = "Tiếng Việt"
+    @Binding var selectedLanguage: String
     @State private var showMenu = false
     
-    let languages = ["Tiếng Việt", "English"]
-    
     var body: some View {
-        VStack() {
-            Button{
-                showMenu = true
+        VStack{
+            Menu {
+                Button("🇻🇳 Tiếng Việt") {
+                    selectedLanguage = "vi"
+                    print("🇻🇳 Selected Vietnamese via Menu")
+                }
+                Button("🇺🇸 English") {
+                    selectedLanguage = "en"
+                    print("🇺🇸 Selected English via Menu")
+                }
             } label: {
                 Image(systemName: "gearshape.fill")
                     .font(.title2)
             }
-                    
-//            Text("Đã chọn: \(selectedLanguage)")
-//                .padding(.top)
-        }
-        .actionSheet(isPresented: $showMenu) {
-            ActionSheet(
-                title: Text("Select Language"),
-                buttons: languages.map { language in
-                    .default(Text(language)) {
-                        selectedLanguage = language
-                    }
-                } + [.cancel()]
-            )
+            
+//            Text("Language :  \(selectedLanguage)")
         }
     }
 }
 
 #Preview {
-    LanguageOptionsView()
+    @Previewable @State var selectedLanguage = "en"
+    LanguageOptionsView(selectedLanguage: $selectedLanguage)
 }

@@ -1,11 +1,18 @@
 import SwiftUI
 
 struct LandscapeView: View {
+    @Binding var selectedLanguage: String
     var body: some View {
         ZStack {
             BackgroundView()
             HStack(){
-                LandScapeTitleView()
+                VStack(alignment: .leading){
+                    Spacer()
+                    LandScapeTitleView()
+                    Spacer()
+                    LanguageOptionsView(selectedLanguage: $selectedLanguage)
+                    Spacer()
+                }
                 Spacer()
                 MessagesView()
                     .padding(.top, 20)
@@ -16,5 +23,6 @@ struct LandscapeView: View {
 }
 
 #Preview {
-    LandscapeView()
+    @Previewable @State var selectedLanguage = "en"
+    LandscapeView(selectedLanguage: $selectedLanguage)
 }
